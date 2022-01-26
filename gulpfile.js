@@ -30,7 +30,7 @@ gulp.task('html', function() {
   return gulp.src([
     './html/*',
   ])
-    .pipe(gulp.dest('./'));
+    .pipe(gulp.dest('./dist'));
 });
 
 // Copy bootstrap-icons from node_modules into /fonts
