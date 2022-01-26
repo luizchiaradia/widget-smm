@@ -25,6 +25,14 @@ gulp.task('vendor:js', function() {
     .pipe(gulp.dest('./assets/js/vendor'));
 });
 
+// Copy HTML into /html
+gulp.task('html', function() {
+  return gulp.src([
+    './html/*',
+  ])
+    .pipe(gulp.dest('./'));
+});
+
 // Copy bootstrap-icons from node_modules into /fonts
 gulp.task('vendor:fonts', function() {
   return  gulp.src([
@@ -119,7 +127,7 @@ gulp.task('dev', function browserDev(done) {
 });
 
 // Build task
-gulp.task("build", gulp.series(gulp.parallel('css:minify', 'js:minify', 'vendor'), 'vendor:build', function copyAssets() {
+gulp.task("build", gulp.series(gulp.parallel('css:minify', 'js:minify', 'vendor', 'html'), 'vendor:build', function copyAssets() {
   return gulp.src([
     '*.html',
     "assets/img/**"
