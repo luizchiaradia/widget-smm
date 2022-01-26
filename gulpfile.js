@@ -122,7 +122,7 @@ gulp.task('dev', function browserDev(done) {
     browserSync.reload();
     done();
   }));
-  gulp.watch(['/src/*.html']).on('change', browserSync.reload);
+  gulp.watch(['src/*.html']).on('change', browserSync.reload);
   done();
 });
 
