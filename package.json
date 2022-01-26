@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JayeshLab/bootstrap-5-sass-gulp-4-boilerplate.git"
+    "url": "git+https://github.com/luizchiaradia/widget-smm.git"
   },
   "keywords": [
     "bootstrap 5",
@@ -23,9 +23,9 @@
   "author": "Jayesh Vachhani",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/JayeshLab/bootstrap-5-sass-gulp-4-boilerplate/issues"
+    "url": "https://github.com/luizchiaradia/widget-smm.git/issues"
   },
-  "homepage": "https://github.com/JayeshLab/bootstrap-5-sass-gulp-4-boilerplate#readme",
+  "homepage": "https://github.com/luizchiaradia/widget-smm.git#readme",
   "dependencies": {
     "@popperjs/core": "^2.11.2",
     "bootstrap": "^5.1.3",
