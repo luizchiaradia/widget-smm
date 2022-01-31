@@ -3,7 +3,7 @@ Projeto visual do para criar uma busca no SMM e alimentar um conteúdo estrutura
 
 ## Pré-requisitos
 - [Node.js](https://nodejs.org/en/download/ "Node Js")
--  NPM (Comes with Node.js)
+-  NPM (Vem com o Node.js)
 - [Gulp 4](https://gulpjs.com/ "Gulp")
 
 Instale o Gulp
