@@ -13,7 +13,7 @@ Instale o Gulp
 
 ## Iniciando o projeto
 
-1. Clone repository:
+1. Clone o repositório:
 `git clone https://github.com/luizchiaradia/widget-smm.git`
 
     
