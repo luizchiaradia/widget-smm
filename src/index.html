@@ -7,9 +7,6 @@
   <meta name="description" content="" />
   <title>Widget SMM</title>
 
-  <!-- Favicons -->
-  <link rel="icon" href="/assets/img/favicons/favicon.ico" />
-
   <!-- Custom styles for this template with bootstrap css -->
   <!-- build:css -->
   <link href="/assets/css/app.css" rel="stylesheet" type="text/css" />
@@ -18,16 +15,18 @@
 
 <body>
   <div class="container">
+
     <nav class="navbar navbar-light bg-light">
       <div class="container-fluid">
         <span class="navbar-brand mb-0 h1">Widget SMM</span>
       </div>
     </nav>
-    <form class="p-4">
+
+    <form class="p-4 clearfix">
       <div class="row mb-3">
         <label for="assunto" class="col-sm-2 col-form-label">Assunto</label>
         <div class="col-sm-10">
-          <input type="text" class="form-control" id="assunto" />
+          <input type="text" class="form-control" id="assunto" name="assunto" />
         </div>
       </div>
       <div class="row mb-3">
@@ -47,7 +46,7 @@
       <div class="row mb-3">
         <label for="usuario" class="col-sm-2 col-form-label">Usuário</label>
         <div class="col-sm-10">
-          <input type="text" class="form-control" id="Usuário" />
+          <input type="text" class="form-control" id="usuario" name="usuario" />
         </div>
       </div>
       <div class="row mb-3">
@@ -99,6 +98,108 @@
         Pesquisar
       </button>
     </form>
+
+    <div class="my-4">
+
+      <div class="result">
+        <p>Exibindo 10 de 2300 resultados</p>
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-3">
+              <img src="https://mediaserver.almg.gov.br/acervo/623/577/1623577.jpg" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-9">
+              <div class="card-body">
+                <h5 class="card-title">Título da Mídia</h5>
+                <p class="card-text text-truncate">Descrição da Mídia</p>
+                <p class="card-text"><small class="text-muted">Data da Mídia</small></p>
+                <button type="button" class="btn btn-secondary">Ver mídia na web</button>
+                <button type="button" class="ms-3 btn btn-primary">Selecionar Mídia</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-3">
+              <div class="ratio ratio-16x9">
+                <video controls>
+                  <source src="https://mediaserver.almg.gov.br/acervo/videos/1623587" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="card-body">
+                <h5 class="card-title">Título da Mídia</h5>
+                <p class="card-text text-truncate">Descrição da Mídia</p>
+                <p class="card-text"><small class="text-muted">Data da Mídia</small></p>
+                <button type="button" class="btn btn-secondary">Ver mídia na web</button>
+                <button type="button" class="ms-3 btn btn-primary">Selecionar Mídia</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-3">
+              <div class="position-relative p-2" style="top: 30%;">
+                <audio controls>
+                  <source src="https://mediaserver.almg.gov.br/acervo/623/646/1623646.mp3" type="audio/mpeg">
+                Your browser does not support the video tag.
+                </audio>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="card-body">
+                <h5 class="card-title">Título da Mídia</h5>
+                <p class="card-text text-truncate">Descrição da Mídia</p>
+                <p class="card-text"><small class="text-muted">Data da Mídia</small></p>
+                <button type="button" class="btn btn-secondary">Ver mídia na web</button>
+                <button type="button" class="ms-3 btn btn-primary">Selecionar Mídia</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-3">
+              <img src="https://via.placeholder.com/640x480.png?text=PDF" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-9">
+              <div class="card-body">
+                <h5 class="card-title">Título da Mídia</h5>
+                <p class="card-text text-truncate">Descrição da Mídia</p>
+                <p class="card-text"><small class="text-muted">Data da Mídia</small></p>
+                <button type="button" class="btn btn-secondary">Ver mídia na web</button>
+                <button type="button" class="ms-3 btn btn-primary">Selecionar Mídia</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <nav class="mt-4">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <span class="page-link">Previous</span>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item active" aria-current="page">
+            <span class="page-link">2</span>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
   </div>
   <!-- Bootstrap 5 Javascript -->
   <script src="/assets/js/vendor/bootstrap.bundle.min.js" type="text/javascript"></script>
