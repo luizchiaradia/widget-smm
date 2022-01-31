@@ -1,38 +1,111 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <title>Bootstrap 5 Template</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <title>Widget SMM</title>
 
-    <!-- Favicons -->
-    <link rel="icon" href="/assets/img/favicons/favicon.ico">
+  <!-- Favicons -->
+  <link rel="icon" href="/assets/img/favicons/favicon.ico" />
 
-    <!-- Custom styles for this template with bootstrap css -->
-    <!-- build:css -->
-        <link href="/assets/css/app.css" rel="stylesheet" type="text/css">
-    <!-- endbuild -->
+  <!-- Custom styles for this template with bootstrap css -->
+  <!-- build:css -->
+  <link href="/assets/css/app.css" rel="stylesheet" type="text/css" />
+  <!-- endbuild -->
 </head>
 
-<body class="text-center">
-    <form class="form-signin">
-        <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-        <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-        <div class="checkbox mb-3">
-          <label>
-            <input type="checkbox" value="remember-me"> Remember me
-          </label>
+<body>
+  <div class="container">
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">Widget SMM</span>
+      </div>
+    </nav>
+    <form class="p-4">
+      <div class="row mb-3">
+        <label for="assunto" class="col-sm-2 col-form-label">Assunto</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="assunto" />
         </div>
-        <button class="btn btn-lg btn-primary w-100" type="submit">Sign in</button>
-      </form>
-<!-- Bootstrap 5 Javascript -->
-<script src="/assets/js/vendor/bootstrap.bundle.min.js" type="text/javascript"></script>
-<!-- Custom Javascript -->
-<!-- build:js -->
-<script src="/assets/js/app.js"></script>
-<!-- endbuild -->
+      </div>
+      <div class="row mb-3">
+        <label for="Data" class="col-sm-2 col-form-label">Data</label>
+        <div class="col-sm-10">
+          <div class="row">
+            <div class="col mb-2">
+              <input type="date" name="di" value="" class="form-control" aria-label="de" placeholder="De dd/mm/yyyy" />
+            </div>
+            <div class="col mb-2">
+              <input type="date" name="df" value="" class="form-control" aria-label="até"
+                placeholder="Até dd/mm/yyyy" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="usuario" class="col-sm-2 col-form-label">Usuário</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="Usuário" />
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="tag" class="col-sm-2 col-form-label">Tag de Localização</label>
+        <div class="col-sm-10">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Escolher Tags
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Tags de Localização
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Tag01
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                    <label class="form-check-label" for="defaultCheck2">
+                      Tag02
+                    </label>
+                  </div>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    Fechar
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Selecionar Tags
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary float-end">
+        Pesquisar
+      </button>
+    </form>
+  </div>
+  <!-- Bootstrap 5 Javascript -->
+  <script src="/assets/js/vendor/bootstrap.bundle.min.js" type="text/javascript"></script>
+  <!-- Custom Javascript -->
+  <!-- build:js -->
+  <script src="/assets/js/app.js"></script>
+  <!-- endbuild -->
 </body>
+
 </html>
