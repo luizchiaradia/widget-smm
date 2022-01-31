@@ -99,7 +99,7 @@ gulp.task('js:minify', function () {
 
 // Replace HTML block for Js and Css file to min version upon build and copy to /dist
 gulp.task('replaceHtmlBlock', function () {
-  return gulp.src(['*.html'])
+  return gulp.src(['./dist/*.html'])
     .pipe(htmlreplace({
       'js': 'assets/js/app.min.js',
       'css': 'assets/css/app.min.css'
